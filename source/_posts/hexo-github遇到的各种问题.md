@@ -13,6 +13,12 @@ tags:
 git rm -r --cached .
 ```
 
+![](hexo-github遇到的各种问题/1.png)
+<center><font size=2>本地文件夹</font></center>
+
+![](hexo-github遇到的各种问题/2.png)
+<center><font size=2>github文件夹</font></center>
+
 2. 新电脑需要配置Node.js环境和git环境，安装hexo
 ```
 npm install hexo -g
