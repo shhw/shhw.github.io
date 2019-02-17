@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Shhw&#39;s Blog</title>
   
-  
+  <subtitle>Aspire to inspire until I expire.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shhw.github.io/"/>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>hexo-github遇到的各种问题</title>
-    <link href="http://shhw.github.io/2019/02/16/hexo-github%E9%81%87%E5%88%B0%E7%9A%84%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98/"/>
-    <id>http://shhw.github.io/2019/02/16/hexo-github遇到的各种问题/</id>
+    <link href="http://shhw.github.io/hexo-github%E9%81%87%E5%88%B0%E7%9A%84%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98/"/>
+    <id>http://shhw.github.io/hexo-github遇到的各种问题/</id>
     <published>2019-02-15T16:55:15.000Z</published>
     <updated>2019-02-17T12:07:49.241Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="新电脑如何编写博客"><a href="#新电脑如何编写博客" class="headerlink" title="新电脑如何编写博客"></a>新电脑如何编写博客</h2><p>一、 配置</p><ol><li>旧电脑hexo文件夹拷贝到新电脑，建议备份到github，然后新电脑更新即可，如果themes文件夹下存在.git，则删除后更新到github，如果github上themes文件夹还没有正确更新，则需要在themes文件夹下运行如下命令清除缓存再次更新。<a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br></pre></td></tr></table></figure></li></ol><p><img src="/2019/02/16/hexo-github遇到的各种问题/1.png" alt></p><center><font size="2">本地文件夹</font></center><p><img src="/2019/02/16/hexo-github遇到的各种问题/2.png" alt></p><center><font size="2">github文件夹</font></center><ol start="2"><li><p>新电脑需要配置Node.js环境和git环境，安装hexo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure></li><li><p>在hexo文件夹下运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li></ol><p>二、编写博客</p><ol><li><p>新建并生成博客，可以用<code>hexo s</code>本地查看</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;你好，hexo&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li><li><p>更新hexo文件夹到github</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;注释&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="新电脑如何编写博客"><a href="#新电脑如何编写博客" class="headerlink" title="新电脑如何编写博客"></a>新电脑如何编写博客</h2><p>一、 配置</p><ol><li>旧电脑hexo文件夹拷贝到新电脑，建议备份到github，然后新电脑更新即可，如果themes文件夹下存在.git，则删除后更新到github，如果github上themes文件夹还没有正确更新，则需要在themes文件夹下运行如下命令清除缓存再次更新。<a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br></pre></td></tr></table></figure></li></ol><p><img src="/hexo-github遇到的各种问题/1.png" alt></p><center><font size="2">本地文件夹</font></center><p><img src="/hexo-github遇到的各种问题/2.png" alt></p><center><font size="2">github文件夹</font></center><ol start="2"><li><p>新电脑需要配置Node.js环境和git环境，安装hexo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure></li><li><p>在hexo文件夹下运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li></ol><p>二、编写博客</p><ol><li><p>新建并生成博客，可以用<code>hexo s</code>本地查看</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;你好，hexo&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li><li><p>更新hexo文件夹到github</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;注释&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     <summary type="html">
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://shhw.github.io/2019/02/15/hello-world/"/>
-    <id>http://shhw.github.io/2019/02/15/hello-world/</id>
+    <link href="http://shhw.github.io/hello-world/"/>
+    <id>http://shhw.github.io/hello-world/</id>
     <published>2019-02-15T14:35:19.950Z</published>
     <updated>2019-02-15T14:35:19.950Z</updated>
     
@@ -59,8 +59,8 @@
   
   <entry>
     <title>gg</title>
-    <link href="http://shhw.github.io/2019/02/15/gg/"/>
-    <id>http://shhw.github.io/2019/02/15/gg/</id>
+    <link href="http://shhw.github.io/gg/"/>
+    <id>http://shhw.github.io/gg/</id>
     <published>2019-02-15T12:09:15.000Z</published>
     <updated>2019-02-15T14:35:19.950Z</updated>
     
