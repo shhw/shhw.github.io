@@ -2,6 +2,7 @@
 title: hexo-github遇到的各种问题
 date: 2019-02-16 00:55:15
 tags:
+copyright : ture
 ---
 
 ## 新电脑如何编写博客
@@ -9,6 +10,7 @@ tags:
 一、 配置
 
 1. 旧电脑hexo文件夹拷贝到新电脑，建议备份到github，然后新电脑更新即可，如果themes文件夹下存在.git，则删除后更新到github，如果github上themes文件夹还没有正确更新，则需要在themes文件夹下运行如下命令清除缓存再次更新。
+<!--more-->
 ```
 git rm -r --cached .
 ```
