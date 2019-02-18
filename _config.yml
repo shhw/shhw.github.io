@@ -96,6 +96,10 @@ feed: # RSS订阅插件
   path: atom.xml
   limit: 0
   
+## 看板娘
+live2d:
+  mobileShow: false  #手机端不显示
+  
 # Online contact 
 daovoice: true
 daovoice_app_id: "f48c4796"
