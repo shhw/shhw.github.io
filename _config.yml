@@ -4,7 +4,7 @@
 
 # Site
 title: Shhw's Blog
-subtitle:
+subtitle: Aspire to inspire until I expire.
 description: 在0与1的海洋中遨游
 keywords:
 author: shhw
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://shhw.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -27,7 +27,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
+ - README.md
+ - CNAME
+ 
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -89,6 +91,11 @@ search:
   format: html
   limit: 10000
 
+feed: # RSS订阅插件
+  type: atom
+  path: atom.xml
+  limit: 0
+  
 # Online contact 
 daovoice: true
 daovoice_app_id: "f48c4796"

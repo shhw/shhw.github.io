@@ -351,6 +351,12 @@
       </div>
     {% endif %}
 
+	<div>
+      {% if not is_index %}
+        {% include 'my-copyright.swig' %}
+      {% endif %}
+	</div>
+
     {% if theme.post_copyright.enable and not is_index %}
       <div>
         {% include 'post-copyright.swig' with { post: post } %}

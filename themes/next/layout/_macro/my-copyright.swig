@@ -7,8 +7,8 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <p><span>本文标题:</span><a href="{{ url_for(page.path) }}">{{ page.title }}</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a></p>
-  <p><span>发布时间:</span>{{ page.date.format("YYYY年MM月DD日 - HH:MM") }}</p>
-  <p><span>最后更新:</span>{{ page.updated.format("YYYY年MM月DD日 - HH:MM") }}</p>
+  <p><span>发布时间:</span>{{ page.date.format("YYYY年MM月DD日 - HH:mm") }}</p>
+  <p><span>最后更新:</span>{{ page.updated.format("YYYY年MM月DD日 - HH:mm") }}</p>
   <p><span>原始链接:</span><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="{{ page.permalink }}"  aria-label="复制成功！"></i></span>
   </p>
@@ -16,7 +16,7 @@
 </div>
 <script> 
     var clipboard = new Clipboard('.fa-clipboard');
-    $(".fa-clipboard").click(function(){
+      $(".fa-clipboard").click(function(){
       clipboard.on('success', function(){
         swal({   
           title: "",   
@@ -24,7 +24,7 @@
           icon: "success", 
           showConfirmButton: true
           });
-    });
+        });
     });  
 </script>
 {% endif %}
