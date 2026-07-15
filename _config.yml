@@ -98,6 +98,7 @@ feed: # RSS订阅插件
   
 ## 看板娘
 live2d:
+  enable: false
   mobileShow: false  #手机端不显示
   
 # Online contact 
